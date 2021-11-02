@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="./js/scrollreveal.js"></script>
+    <link rel="stylesheet" href="style-wp.css">
+    <link rel="icon" type="image/png" href="./recursos/logo-neon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>FDV Radio</title>
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=+502%2045591370&text="
+        class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v11.0"
+        nonce="edLCidFn"></script>
+
+
+
+    <main>
+        <header>
+            <div class="contenedor">
+                <h2 class="logotipo">FDV Radio</h2>
+
+                <nav>
+                    <a class="activo" href="#">Inicio</a>
+                    <a href="#section-programas">Programas</a>
+                    <a href="#section-contactanos">Contáctanos</a>
+
+                </nav>
+            </div>
+        </header>
+        <div class="heading">
+            <div class="mitad1-heading">
+
+                <img class="logo-heading" src="./recursos/logo-neon.png" alt="">
+               
+
+            </div>
+            <div class="boton-play">
+                                <!--MANASÉS JIMÉNEZ-->
+                <audio src="https://www.gtdesarrollo.net/radio/8020/radio.mp3?1612385701"></audio>
+                <button id="play1" onclick="mostrarBoton();" role="button" class="play"></button>
+                <button id="pause1" onclick="ocultarBoton();" role="button" class="pause"></button>
+
+                                    <!--MANASÉS JIMÉNEZ-->
+                <script type="text/javascript">
+                    var v = document.getElementsByTagName("audio")[0];
+                    var sound = false;
+                    
+                    var boton = document.getElementById("play1");
+                    boton.addEventListener("click", function(){
+                       if (!sound) {
+                           v.play();
+                           //this.innerHTML = "Pausar";
+                           sound = true;
+                       } 
+                       
+                    });
+                    var pa = document.getElementById("pause1");
+                    pa.addEventListener("click", function(){
+                    if(sound == true) {
+                           v.pause();
+                           //this.innerHTML = "Play";
+                           sound = false;
+                       }
+                    });
+                   </script>
+<!---------------------------------------------------------------------------------------------------------->
+
+                <h3 class="titulo">¡ESCÚCHANOS — AHORA!</h3>
+                <h3 class="texto-titulo2">Más que una Radio… ¡Una Familia!</h3>
+            </div>
+        </div>
+    </main>
+
+    <section id="section-programas" class="programas">
+
+
+
+        <div class="texto-programas typewriter-effect">
+            <h2 class="titulo-programas text" id="typewriter-text"></h2>
+        </div>
+        <div class="cuadricula">
+            <figure class="hover-img center">
+                <img class="logos-program" width="250px" src="./recursos/Logos-Programas-18.jpg" />
+                <figcaption>
+                    <h3>Vale<br />La Pena</h3>
+                </figcaption>
+            </figure>
+
+            <figure class="hover-img center">
+                <img class="logos-program" src="./recursos/Logos-Programas-13.jpg" />
+                <figcaption>
+                    <h3>Ponte<br />En Marcha</h3>
+                </figcaption>
+            </figure>
+
+            <figure class="hover-img center">
+                <img class="logos-program" src="./recursos/Logos-Programas-16.jpg" />
+                <figcaption>
+                    <h3>Tu<br />Espacio</h3>
+                </figcaption>
+            </figure>
+
+            <figure class="hover-img center">
+                <img class="logos-program" height="200px" src="./recursos/Logos-programas-17.jpg" />
+                <figcaption>
+                    <h3>Una Palabra<br />De Fe</h3>
+                </figcaption>
+            </figure>
+
+            <figure class="hover-img center">
+                <img class="logos-program" height="200px" src="./recursos/Logos-Programas-14.jpg" />
+                <figcaption>
+                    <h3>Following<br /></h3>
+                </figcaption>
+            </figure>
+
+            <figure class="hover-img center">
+                <img class="logos-program" src="./recursos/logo-conectados.png" />
+                <figcaption>
+                    <h3>Conectados<br /></h3>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="noticias">
+ 
+
+        <div class="noticias-cuadricula card-container">
+
+
+
+            <div class="logo-fdv ">
+
+                <a class="link-pageFDV" target="blank" href="https://fuentedevida.edu.gt/"><img class="publicidad"
+                        src="./recursos/fdv-logo.png" alt=""></a>
+
+                <div class="texto-publicidad">
+                    <h2 class="">conozca más sobre nuestro patrocinador <br> c.e.c. fuente de vida</h2>
+                    <a target="blank" href="https://fuentedevida.edu.gt/"><button class="boton"><i class="fas fa-globe-americas"></i>Visítanos</button></a>
+                </div>
+            </div>
+
+
+            <div class="app">
+                <div class="texto-movil">
+                    <h2 class="">Conozca nuestra aplicación </h2>
+                    <a target="blank" href="https://play.google.com/store/apps/details?id=com.gtdesarrollo.fdvradio"><button class="boton"><i class="fab fa-google-play"></i>Descargar Ahora</button></a>
+                </div>
+
+                <div class="img-movil">
+                    <a target="blank" href="https://play.google.com/store/apps/details?id=com.gtdesarrollo.fdvradio"><img src="./recursos/mokups.png" alt=""></a>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <div class="patrocinio-general">
+        <div class="img-fdv">
+            <h2 class="texto-patgeneral">Nuestro Patrocinador Principal</h2>
+            <img class="general-general" src="./recursos/logo-colegio2.png" alt="">
+        </div>
+        <h2 class="texto-logos">Nuestras alianzas</h2>
+        <div class="img-patrocinios">
+            <img class="casa1" src="./recursos/casa 1.png" alt="">
+            <img class="frater1" src="./recursos/fraternidadcristiana 1.png" alt="">
+            <img class="lluvias1" src="./recursos/LogoLluviasgris.png" alt="">
+
+        </div>
+
+    </div>
+
+    <section id="section-contactanos" class="contactanos">
+        <div class="texto-contacto">
+
+        </div>
+
+                                    <!--MANASÉS JIMÉNEZ <FORM>-->
+        <form class="formulario" name="contact-form" method="POST" action="enviar.php">
+            <h1>Contáctanos</h1>
+            <input type="text" name="nombre" required="required" value="" placeholder="Nombre">
+            <input type="email" name="email" required="required" value="" placeholder="Correo">
+            <textarea name="mensaje" placeholder="Mensaje"></textarea>
+            <button type="submit"  class="btn-grad" name="submit">Enviar Mensaje</button>
+
+            <div class="redes-sociales">
+                <a target="blank" href="https://www.facebook.com/fuentedevidaradiogt/"><i
+                        class="fab fa-facebook fa-2x"></i></a>
+                <a target="blank" href="https://www.instagram.com/fuentedevidaradiogt/?hl=es"><i
+                        class="fab fa-instagram fa-2x"></i></a>
+                <a target="blank" href="https://www.tiktok.com/@colegio_fuente_de_vida?lang=es"><i
+                        class="fab fa-tiktok fa-2x"></i></a>
+            </div>
+
+        </form>
+    </section>
+
+
+
+
+    <script src="https://kit.fontawesome.com/a3eb75cfaa.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
